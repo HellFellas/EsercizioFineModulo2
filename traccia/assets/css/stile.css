@@ -1,0 +1,365 @@
+/* IMPOSTAZIONI GENERALI */
+body {
+    font-family: Poppins, 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    padding: 15px;
+    background-image: url('../img/sfondo.png'); /* Sostituisci 'path_to_your_image.jpg' con il percorso dell'immagine sul tuo server */
+    background-position: center; /* Centra l'immagine di sfondo */
+    /*background: fixed;*/
+}
+@media screen and (min-width:500px) {
+    html {
+        font-size: 70%;
+    }
+    body {
+        line-height: 1.8;
+    }
+}
+
+@media screen and (min-width:700px) {
+    html {
+        font-size: 80%;
+    }
+    body {
+        line-height: 2;
+    }
+}
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 100%;
+    }
+    body {
+        line-height: 2.4;
+    }
+}
+
+* {box-sizing: border-box;}
+hr {
+    display: none;
+} 
+
+/* BUTTON FIXED */
+.toTop .far {
+    background: white;
+    }
+.toTop {
+position: fixed;
+bottom: 10px;
+right: -7px;
+}
+.toTop a {
+color: #fa9ecc;
+font-size: 4rem;
+display: block;
+}
+
+
+/* HEADER */
+header {
+    background: rgb(0, 204, 255);
+    background: linear-gradient(180deg, rgb(0, 204, 255) 0%, rgb(0, 76, 93) 68%);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    box-shadow: 0 3px 3px #444;
+    margin-bottom: 1.5em;
+    padding: 2em 1.5em;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+@media screen and (min-width:800px) {
+    header {
+        padding: 1.3em;
+    }
+}
+
+@media screen and (min-width:800px) {
+        header {
+            padding: 1em;
+        }
+    }
+    header nav ul {
+        margin: 0;
+    }
+    header nav li {
+        list-style: none;
+        display: inline-block;
+        margin-right: 10px;
+    }
+        header nav li:last-child {
+            margin-right: 0;
+        }
+    header nav li a {
+        color: white;
+        text-decoration: none;
+    }
+    header nav li a:hover {
+        color: red;
+    }
+    header nav li a::before {
+        content: "\22c6\0020";
+    }
+header div img {
+    margin-bottom: 20px;
+}
+
+
+/* MAIN */
+main {
+    background-color: #ffffff;
+    box-shadow: 0 3px 3px #000000;
+    padding: 2em 1em;
+    margin-bottom:1.5em ;
+}
+    @media screen and (min-width:700px) {
+        main {
+            padding: 2em;
+        }
+    }
+
+section { 
+    background-color: #ffffff;
+    padding: 2.5em 1em 1em;
+    margin-bottom: 2em;
+    position: relative;
+}
+section h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+    background-color: #a3a3a3;
+    position: absolute;
+    left: 5%;
+    padding: 0 1em;
+    box-shadow: 1px 1px 2px #000000;
+
+}
+
+/* ELEMENTI NEL MAIN - ARTICLE */
+h1 {
+    font-size: 2.6rem;
+    font-weight: bold;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.7em;
+}
+
+p {
+    margin-bottom: 1.2em;
+}
+ul {
+    margin-bottom: 1.2em;
+}
+ol {
+    margin-bottom: 1.2em;
+}
+dl {
+    margin-bottom: 1.2em;
+}
+blockquote {
+    margin-bottom: 1.2em;
+}
+
+h1  {
+    color: #7c7c7c;
+}
+
+p {
+    color: #7c7c7c;
+}
+.imgLeft {
+    float: left;
+    margin-right: 20px;
+    border: 4px solid #00ccff;
+    outline: 4px solid #9f0062;
+    padding: 3px;
+}
+
+ul {
+    margin-left: 2em;
+}
+ol {
+    margin-left: 2em;
+}
+a {
+    color: #00ccff;
+    font-weight: bold;
+}
+strong {
+    color: #c00076;
+    font-weight: bold;
+}
+code {
+    background-color: #ffffff;
+    border: 1px solid #6d6d6d;
+    border-radius: 5px;
+}
+iframe {
+    width: 100%;
+    height: auto;
+    margin-bottom: 2em;
+    border-radius: 20px;
+}
+
+
+/* TABELLE */
+table {
+    margin-bottom: 2em;
+}
+    @media screen and (min-width:500px) {
+        table {
+            margin: 0 auto 2em;
+        }
+    }
+    @media screen and (min-width:700px) {
+        table {
+            width: 70%;
+        }
+    }
+
+caption {
+    font-weight: bold;
+    font-style: italic;
+}
+thead tr {
+    background-color: #2e61cf;
+    color: #ffffff;
+}
+th {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+td {
+    padding: 12px 15px;
+    vertical-align: bottom;
+    text-align: center;
+}
+tbody tr {
+    border-bottom: 1px solid #ffffff;
+}
+
+tbody tr:nth-of-type(even) {
+    background-color: #ffffff;
+}
+
+tbody tr:last-of-type {
+    border-bottom: 2px solid #2e61cf;
+}
+
+/* FORM */
+input {
+    padding: 5px;
+    border: 0;
+    border-bottom: 1px dashed #151515;
+}
+button {
+    padding: 4px 7px;
+    background-color: #2e61cf;
+    border: 0;
+    color: white;
+    font-weight: bold;
+}
+    @media screen and (min-width:500px) {
+        input {
+            display: inline-block;
+            width: 70%;
+        }
+    }
+    @media screen and (min-width:700px) {
+        input {
+            padding: 15px;
+        }
+        button {
+            padding: 15px 30px;
+        }
+    }
+
+/* ELEMENTI NELL' ASIDE */
+aside h2 {
+    text-align: center;
+    color: #000000;
+    font-size: 2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+aside div {
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    margin-bottom: 1em;
+    padding: 1em;
+}
+aside div p:last-child {
+    margin-bottom: 0;
+    font-size: 0.8em;
+    text-align: right;
+}
+
+
+
+/* FOOTER */
+footer {
+    background: rgb(0, 0, 0);
+    background: linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 131, 161) 68%);
+    box-shadow: 0 3px 3px #000000;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.2rem;
+}
+    @media screen and (min-width:800px) {
+        footer {
+            padding: 1em 12em;
+        }
+    }
+
+footer a {
+    color: rgb(244, 77, 244);
+}
+
+
+@media screen and (min-width:1200px) {
+    header, main, footer {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media print {
+    body {
+        font-size: 24px;
+        padding: 0;
+        background-image: none;
+    
+    }
+    main {
+        box-shadow: none;
+        margin: 0;
+    }
+    th {
+        background-color: #ffffff;
+    }
+    header{
+        display: none;
+    }
+    article section{
+        display: none;
+    }
+    aside{
+        display: none;
+    }
+    footer{
+        display: none;
+    }
+    .toTop {
+        display: none;
+    }
+}
+
